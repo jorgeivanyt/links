@@ -1,0 +1,4 @@
+Empecé aplicando la abstracción al crear la clase abstracta Producto, que nos sirve como plantilla para guardar lo básico que tiene cualquier artículo de la tienda (codigo, nombre y precio), 
+evitando que alguien pueda crear un "producto genérico" que en la realidad no existe. A partir de esa base usamos la herencia: tanto ProductoAlimenticio como ProductoElectronico extienden de 
+Producto con extends, reutilizando sus datos mediante super para no repetir código, pero dándole su propio toque al sobrescribir el método toString(). Finalmente, aseguramos todo con el encapsulamiento,
+marcando los atributos como private para que nadie pueda modificarlos directamente desde afuera y permitiendo consultarlos únicamente de forma controlada mediante métodos getter públicos.

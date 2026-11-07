@@ -1,0 +1,7 @@
+Para gestionar el inventario elegí un HashMap<String, Producto> porque aplica una función hash sobre la clave codigo, 
+permitiéndonos insertar con put y buscar con get de forma casi instantánea. Además, evitamos códigos duplicados de forma nativa; 
+en cambio, con un ArrayList tendríamos que recorrer la lista elemento por elemento, volviéndose lento al crecer la tienda. 
+Por otro lado, sumamos el manejo de excepciones con bloques try-catch y excepciones personalizadas para separar la lógica normal de los errores, 
+evitando que el programa se cierre bruscamente y dándole mensajes claros al usuario. Es como lo que pasa en un cajero automático o pasarela de pagos: 
+si falla la red o falta saldo al retirar dinero y el sistema no captura esa excepción, el programa colapsaría a mitad de la operación, 
+corriendo el riesgo de descontar el saldo sin entregar los billetes.
